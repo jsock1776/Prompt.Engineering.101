@@ -1,7 +1,6 @@
 import streamlit as st
 from llm_apis import gpt4_api, claude_api, gemini_api
-import accessibility
-
+from utils import accessibility
 def display():
     st.header("Module 7: Large-Scale Threat Modeling and Risk Management in AI Systems")
     

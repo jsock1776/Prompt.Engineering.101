@@ -1,13 +1,13 @@
 import streamlit as st
 from llm_apis import gpt4_api, claude_api, gemini_api
-import accessibility
+from utils import accessibility
 
 def display():
-    st.header("Module 5: Adaptive AI Techniques for Neurodivergent-Friendly Learning and Research")
+    st.header("Module 9: High-Performance AI Security Applications and Collaborative Research Skills")
     
     intro_text = (
-        "This module introduces adaptive AI techniques for creating accessible, neurodivergent-friendly learning tools,"
-        "focusing on real-time adaptability and user-friendly prompt designs."
+        "This module teaches the optimization of AI for high-stakes security applications and collaborative skills for AI projects,"
+        "with a focus on best practices in reproducibility, communication, and compliance."	
     )
     st.write(intro_text)
     accessibility.speak_text(intro_text)

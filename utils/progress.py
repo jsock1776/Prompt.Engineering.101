@@ -1,5 +1,5 @@
 import json
-from utils import pdf_report  # Updated import path
+from utils import pdf  # Updated import path
 
 def save_progress(user_id, progress_data, filename="user_progress.json"):
     """Save user progress to a JSON file."""
@@ -34,5 +34,5 @@ def generate_progress_pdf(user_id, filename="progress_report.pdf"):
         content += f"Module: {module}\nStatus: {status}\n\n"
     
     # Generate PDF using the pdf_report module
-    pdf_report.create_pdf_report(title, content, filename)
+    pdf.create_pdf_report(title, content, filename)
     print(f"Progress report generated: {filename}")

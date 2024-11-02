@@ -1,14 +1,13 @@
 import streamlit as st
 from llm_apis import gpt4_api, claude_api, gemini_api
-import accessibility
+from utils import accessibility
 
 def display():
-    st.header("Module 3: AI Security Research Fundamentals – Threat Intelligence and Vulnerability Detection")
+    st.header("Module 6: Advanced Threat Modeling and Ethical Considerations in AI Security")
     
     intro_text = (
-        "This module explores the intersection of AI and security, teaching you to apply AI in "
-        "threat detection and vulnerability analysis. Ethical and responsible AI considerations "
-        "in security applications are emphasized."
+        "Dive deeper into advanced threat modeling, using structured frameworks to assess AI security."
+        "This module also emphasizes ethical considerations, compliance, and responsible practices in high-stakes applications."	
     )
     st.write(intro_text)
     accessibility.speak_text(intro_text)

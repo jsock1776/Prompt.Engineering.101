@@ -1,13 +1,13 @@
 import streamlit as st
 from llm_apis import gpt4_api, claude_api, gemini_api
-import accessibility
+from utils import accessibility
 
 def display():
-    st.header("Module 9: High-Performance AI Security Applications and Collaborative Research Skills")
+    st.header("Module 8: Ethical Guardrails and Bias Mitigation in AI")
     
     intro_text = (
-        "This module teaches the optimization of AI for high-stakes security applications and collaborative skills for AI projects,"
-        "with a focus on best practices in reproducibility, communication, and compliance."	
+        "Learn to implement ethical guardrails and bias mitigation in AI."
+        "This module emphasizes accountability, transparency, and standards like FAT (Fairness, Accountability, Transparency) in developing responsible AI."	
     )
     st.write(intro_text)
     accessibility.speak_text(intro_text)
